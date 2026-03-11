@@ -6,8 +6,8 @@ export const config = {
 
 export default async function handler(request) {
   try {
-    const endDate = new Date("2026-03-13T23:59:59");
     const now = new Date();
+    const endDate = new Date(now.getTime() + (2 * 24 * 60 * 60 * 1000)); // 2 days from now
 
     const diff = endDate - now;
 
