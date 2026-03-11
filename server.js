@@ -62,7 +62,7 @@ const handler = async (req, res) => {
 };
 
 const server = http.createServer(handler);
-const port = 3001;
+const port = 4000;
 
 server.listen(port, () => {
   console.log(`Countdown server running at http://localhost:${port}`);
