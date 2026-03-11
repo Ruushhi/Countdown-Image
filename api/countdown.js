@@ -57,6 +57,9 @@ export default async function handler(request) {
       {
         width: 600,
         height: 120,
+        headers: {
+          'Cache-Control': 'no-cache, no-store, must-revalidate, max-age=0'
+        }
       }
     );
   } catch (e) {
